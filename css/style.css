@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	height: 100%;
+	width: auto;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* Text */
+h1{
+	color: #2AE61C;
+}
+
+h2, h4, #Fotogalerij h3, #videos p{
+	color: white;
+}
+
+#About p, #videos h3, .dropdown-content a, #formulier h3{
+	color: #3870C1;
+}
+
+a{
+	color: white!important;
+}
+
+.dropdown-content a{
+	color: #3870C1!important;
+}
+
+h3{
+	font-size: 3.125rem!important;
+}
+
+p{
+	font-size: 1.25rem;
+}
+
+/* Jumbotron */
+
+#Home{
+	height: 100vh;
+	max-width: 100%;
+	background: url("../img/Achtergrond.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#navigation{
+	display: flex;
+	justify-content: center;
+}
+
+#knoppen{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.list-inline{
+	display: flex;
+	align-items: center;
+}
+
+li{
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: none;
+}
+
+.dropbtn{
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  width: 9.375rem;
+  background-color: white;
+  opacity: 0,5;
+  border-radius: 0.625rem;
+}
+
+.dropdown-content a{
+	padding: 0.3125rem;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+}
+
+.dropdown-content a:hover{
+	font-size: 1.25rem;
+}
+
+#Jumbo-center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#Logo{
+	height: 40vh;
+}
+
+#Home, #About{
+	max-height: 100vh;
+}
+
+/* About */
+
+#About-text{
+	width: 50vw;
+	padding: 50px;
+}
+
+#collega{
+		padding-right: 0px;
+}
+
+#collega img{
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 100vh;
+	width: 50vw;
+	object-fit: cover;
+}
+
+/* Fotogalerij */
+
+#Fotogalerij{
+	background-color: #3870C1;
+}
+
+.gallery{
+	display: flex;
+	justify-content: space-between;
+}
+
+.photo-row{
+	height: 37vh;
+}
+
+
+/* Video's */
+
+#videos{
+	background-color: #2AE61C;
+}
+
+#Typoanimatie, #Kortfilm{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+iframe, #videos p{
+	;
+}
+
+/* Formulier */
+
+.forum{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.Name{
+	width: 9.375rem;
+	color: #3870C1;
+	font-weight: bold;
+}
+
+
+input, textarea, .select2-hidden-accessible{
+	color: #3870C1;
+	box-sizing: border-box;
+	border: 0.1875rem solid #2AE61C;
+	outline: none;
+	width: 40vw;
+}
+
+#omschrijving{
+	height: 6.25rem;
+	text-align: text-start;
+}
+
+button{
+	color: white;
+	border: none;
+	width: 10rem;
+	height: 3rem;
+}
+
+.send{
+	background-color: #2AE61C;
+	border-radius: 1.5625rem;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+#contact{
+	display: flex;
+	justify-content: space-around;
+	color: #3870C1;
+	font-weight: bold;
+}
+
+#contact ul{
+	display: flex;
+	align-items: center;
+
+}
+
+i{
+	height: 1.25rem;
+	color: #3870C1;
+}
+
+/* Media Query's */
+
+@media (max-width: 850px){
+	
+	#knoppen{
+		display: flex;
+		justify-content: center;
+		padding: 1.25rem 0!important;
+	}
+
+	#Logo{
+		max-width: 70%;
+	}
+
+	#Jumbo-center{
+		margin-top: 3.125rem;
+	}
+
+	#Jumbo-center h2{
+		width: 50vw;
+	}
+
+	iframe{
+		max-width: 70vw;
+		height: auto;
+	}
+
+	#Typoanimatie h4{
+		margin-top: 0.625rem!important;
+	}
+
+	#contact{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 1180px){
+
+	#knoppen .list-inline li{
+		font-size: 1.25rem;
+		padding: 1rem;
+	}
+
+	#Jumbo-center{
+		margin-top: 17vh;
+	}
+	
+	#Logo{
+		height: 20vh;
+	}
+
+	#about{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#About-text{
+		margin-top: 0px!important;
+		padding-bottom: 0px;
+		width: 100vw;
+		text-align: center;
+	}
+
+	#collega{
+		display: flex;
+		justify-content: center;
+		padding-left: 0!important;
+	}
+
+	#collega img{
+		height: 50vw;
+		min-width: 100vw;
+	}
+
+	.photo-row{
+		height: 14.5vw;
+	}
+}
+
